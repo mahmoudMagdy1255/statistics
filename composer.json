@@ -1,0 +1,19 @@
+{
+    "name": "wakeb/statistics",
+    "description": "A library for statistical calculations.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Statistics\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mahmoud Magdy",
+            "email": "m.magdy@wakeb.tech"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
