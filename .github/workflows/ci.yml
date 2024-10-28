@@ -47,4 +47,4 @@ jobs:
       #   run: php artisan test --coverage-text
 
       - name: Linting
-        run: composer run-script lint
+        run: composer lint
