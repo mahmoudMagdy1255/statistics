@@ -35,8 +35,6 @@ jobs:
         with:
           path: vendor
           key: ${{ runner.os }}-composer-${{ hashFiles('composer.json') }}
-      - name: List Files (Debugging)
-        run: ls -la  # List files to check if artisan is present
 
       # - name: Run Statistics Tests
       #   env:
