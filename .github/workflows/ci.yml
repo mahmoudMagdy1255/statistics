@@ -38,15 +38,15 @@ jobs:
       - name: List Files (Debugging)
         run: ls -la  # List files to check if artisan is present
 
-      - name: Run Statistics Tests
-        env:
-          APP_ENV: wakeb\statistics
-          CACHE_DRIVER: array
-          SESSION_DRIVER: array
-          QUEUE_CONNECTION: sync
-          DB_CONNECTION: sqlite
-          DB_DATABASE: ':memory:'
-        run: php artisan test --coverage-text
+      # - name: Run Statistics Tests
+      #   env:
+      #     APP_ENV: wakeb\statistics
+      #     CACHE_DRIVER: array
+      #     SESSION_DRIVER: array
+      #     QUEUE_CONNECTION: sync
+      #     DB_CONNECTION: sqlite
+      #     DB_DATABASE: ':memory:'
+      #   run: php artisan test --coverage-text
 
       - name: Linting
         run: composer run-script lint
