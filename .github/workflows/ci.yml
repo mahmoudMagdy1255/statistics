@@ -36,7 +36,7 @@ jobs:
           path: vendor
           key: ${{ runner.os }}-composer-${{ hashFiles('composer.json') }}
 
-      - name: Run Statistics Tests\
+      - name: Run Statistics Tests
         env:
           APP_ENV: wakeb\statistics
           CACHE_DRIVER: array
